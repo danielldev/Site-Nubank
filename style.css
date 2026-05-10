@@ -19,7 +19,11 @@ header {
 }
 
 .container {
-    width: 84%;
+    width: 65%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .cabecalho {
@@ -93,7 +97,6 @@ body>.container {
     background-color: #fff;
 
     display: flex;
-    padding: .8% 8% .8% 8%;
     width: 100vw;
 }
 
@@ -101,16 +104,14 @@ body>.container {
 body>.container>.outros {
     display: flex;
     width: 100%;
+    margin: 10px 0px    ;
     justify-content: space-between;
     font-family: "Google Sans Flex", sans-serif;
     font-family: "Outfit", sans-serif;
 }
 
-body>.container>.outros>.titulo {
-    font-size: 20px;
-}
 
-.titulo h5 {
+.outros h3 {
     font-size: 20px;
     font-weight: 600;
 }
@@ -133,13 +134,14 @@ body>.container>.outros>.titulo {
     background-color: #f4f4f4;
     display: flex;
     justify-content: space-around;
-    height: 82vh;
+    height: 78vh;
 
 }
 
 .main-content1 {
     display: flex;
-    column-gap: 12.4vw;
+    justify-content: space-between;
+    column-gap: 6.4vw;
 
 }
 
@@ -154,21 +156,19 @@ body>.container>.outros>.titulo {
 }
 
 .info-field span {
-    font-size: 35px;
-    font-weight: 500;
-    color: #820AD1;
-    font-family: "Google Sans Flex", sans-serif;
+    font-size: 38px;
+    color: black;
     font-family: "Outfit", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 /* paragrafo da conta */
 .info-field h1 {
+    color: #820AD1;
     font-family: "Outfit", sans-serif;
-    font-size: 28px;
     font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 /* paragrafo do texto */
@@ -177,6 +177,7 @@ body>.container>.outros>.titulo {
     font-size: 22px;
     font-weight: 600;
     color: rgb(0, 0, 0);
+    margin-top: 12px;
 }
 
 .register-field {
@@ -242,7 +243,7 @@ input[type="number"] {
 }
 
 .main-image img {
-    width: 37rem;
+    width: 41rem;
     border-radius: 28px;
     margin-top: 23px;
     object-fit: cover;
@@ -250,35 +251,27 @@ input[type="number"] {
 }
 
 /* Seção de card (beneficios) */
-
 .beneficios {
     background-color: #E9DFF6;
-    padding: 30px;
+    padding-bottom: 10px;
 }
-
 .cards {
-    display: grid;
-    background-color: antiquewhite;
-    /* grid-template: 2, 3;
-    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
-    /* padding: 30px; */
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
 .beneficios h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Google Sans Flex", sans-serif;
+    text-align: center;
     font-family: "Outfit", sans-serif;
-    padding: 40px 0;
     font-weight: 500;
     font-size: 47px;
 }
 .benCards {
+    flex: 1 1 180px;
+    min-width: 0;
     padding: 10px;
-    row-gap: 10px;
-    column-gap: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
