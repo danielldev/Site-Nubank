@@ -5,7 +5,8 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,16 +20,22 @@ header {
 }
 
 .container {
-    width: 65%;
+    width: 90%;
     max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
-    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 65%;
+    }
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 17px;
 }
 
@@ -134,21 +141,31 @@ body>.container>.outros {
     background-color: #f4f4f4;
     display: flex;
     justify-content: space-around;
-    height: 78vh;
-
+    min-height: 78vh;
+    padding: 40px 0;
 }
 
 .main-content1 {
     display: flex;
     justify-content: space-between;
-    column-gap: 6.4vw;
-
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .login-field {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
+    min-width: 320px;
+}
+
+.main-image {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
 }
 
 .info-field {
@@ -185,12 +202,12 @@ body>.container>.outros {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 223px;
-    width: 410px;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
     border-radius: 29px;
-    display: flex;
     justify-content: center;
-    padding: 0 20px;
+    padding: 30px 20px;
     row-gap: 14px;
 }
 
@@ -206,14 +223,24 @@ body>.container>.outros {
     margin-left: 5px;
 }
 
-.register-field input {
+.input-group {
+    display: flex;
     background-color: #f4f4f4;
-    border: none;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 19px;
-    border-radius: 27px;
+    border-radius: 30px;
+    padding: 5px;
+    width: 100%;
+}
 
+.register-field input {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 27px;
+    flex: 1;
+    min-width: 0;
+    outline: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -230,20 +257,23 @@ input[type="number"] {
 .register-field button {
     background-color: #820AD1;
     border: none;
-    padding: 18px;
-    border-radius: 27px;
+    padding: 15px 25px;
+    border-radius: 25px;
     color: #fff;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 600;
     display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .main-image img {
-    width: 41rem;
+    width: 100%;
+    max-width: 41rem;
+    height: auto;
     border-radius: 28px;
     margin-top: 23px;
     object-fit: cover;
@@ -274,4 +304,49 @@ input[type="number"] {
     padding: 10px;
     background-color: white;
     border-radius: 10px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .outros {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .outros ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .info-field {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .beneficios h1 {
+        font-size: 32px;
+    }
 }
