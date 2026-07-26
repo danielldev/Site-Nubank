@@ -1,352 +1,359 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header {
-    background-color: #F4F4F4;
-    width: 100%;
-    height: 80px;
-    column-gap: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 80px;
+  column-gap: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
+  width: 80%;
+  /* max-width: 1200px; */
+  /* box-sizing: border-box; */
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
-    .container {
-        width: 65%;
-    }
 }
 
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
 }
 
 .logoAndNav {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .logo-image {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 header nav {
-    display: flex;
+  display: flex;
 }
 
 .navigation {
-
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navigation ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    column-gap: 20px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 20px;
 }
 
 .navigation ul li a:hover {
-    color: #820AD1;
-    transition: .1s;
+  color: #820ad1;
+  transition: 0.1s;
 }
 
 .navigation a {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
 
 .buttons button {
-    all: unset;
-    padding: 2vh 3vh;
-    background-color: #E5E6E7;
-    border-radius: 30px;
-    cursor: pointer;
+  all: unset;
+  padding: 2vh 3vh;
+  background-color: #e5e6e7;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .buttons button:last-of-type {
-    background-color: #820AD1;
-    color: white;
+  background-color: #820ad1;
+  color: white;
 }
 
-body>.container {
-    background-color: #fff;
+body > .container {
+  background-color: #fff;
 
-    display: flex;
-    width: 100vw;
+  display: flex;
+  width: 100vw;
 }
 
 /* Seçao Outros */
-body>.container>.outros {
-    display: flex;
-    width: 100%;
-    margin: 10px 0px    ;
-    justify-content: space-between;
-    font-family: "Google Sans Flex", sans-serif;
-    font-family: "Outfit", sans-serif;
+.others {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0px;
+  justify-content: space-between;
+  font-family: "Google Sans Flex", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
-
-.outros h3 {
-    font-size: 20px;
-    font-weight: 600;
+.others h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.outros ul {
-    display: flex;
-    list-style: none;
-    gap: 19px;
-    font-weight: 500;
+.others ul {
+  display: flex;
+  list-style: none;
+  gap: 19px;
+  font-weight: 500;
 }
 
-.outros ul a {
-    text-decoration: none;
-    color: #000;
+.others ul a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Conteúdo principal */
 
 .main-content {
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: space-around;
-    min-height: 78vh;
-    padding: 40px 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-around;
+  min-height: 78vh;
+  padding: 40px 0;
 }
 
 .main-content1 {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .login-field {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 320px;
 }
 
 .main-image {
-    flex: 1;
-    min-width: 320px;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
 }
 
 .info-field {
-    margin-top: 100px;
+  margin-top: 50px;
 }
 
 .info-field span {
-    font-size: 38px;
-    color: black;
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 38px;
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 /* paragrafo da conta */
 .info-field h1 {
-    color: #820AD1;
-    font-family: "Outfit", sans-serif;
-    font-size: 36px;
-    font-weight: 500;
+  color: #820ad1;
+  font-family: "Outfit", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 /* paragrafo do texto */
 .info-field p {
-    font-family: "Outfit", sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    margin-top: 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-top: 12px;
 }
 
 .register-field {
-    font-family: "Outfit", sans-serif;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 29px;
-    justify-content: center;
-    padding: 30px 20px;
-    row-gap: 14px;
+  font-family: "Outfit", sans-serif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 29px;
+  justify-content: center;
+  padding: 30px 20px;
+  row-gap: 14px;
 }
 
 .register-field form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
 }
 
 .register-field form label {
-    font-size: 21px;
-    font-weight: 500;
-    margin-left: 5px;
+  font-size: 21px;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 .input-group {
-    display: flex;
-    background-color: #f4f4f4;
-    border-radius: 30px;
-    padding: 5px;
-    width: 100%;
+  display: flex;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  padding: 5px;
+  width: 100%;
 }
 
 .register-field input {
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 15px 20px;
-    border-radius: 27px;
-    flex: 1;
-    min-width: 0;
-    outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 27px;
+  flex: 1;
+  min-width: 0;
+  outline: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+  appearance: textfield;
 }
 
-
 .register-field button {
-    background-color: #820AD1;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    cursor: pointer;
-    white-space: nowrap;
+  background-color: #820ad1;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .main-image img {
-    width: 100%;
-    max-width: 41rem;
-    height: auto;
-    border-radius: 28px;
-    margin-top: 23px;
-    object-fit: cover;
-    object-position: 54% 50%;
+  width: 100%;
+  max-width: 41rem;
+  height: auto;
+  border-radius: 28px;
+  margin-top: 23px;
+  object-fit: cover;
+  object-position: 54% 50%;
 }
 
 /* Seção de card (beneficios) */
 .beneficios {
-    background-color: #E9DFF6;
-    padding-bottom: 10px;
+  background-color: #8d0de3;
+  padding-bottom: 10px;
 }
+
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 1.5rem;
 }
 
 .beneficios h1 {
-    text-align: center;
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 47px;
+  color: #f3efe6;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 47px;
+}
+.benCards img {
+  width: 20%;
+  margin-bottom: 5px;
 }
 .benCards {
-    flex: 1 1 180px;
-    min-width: 0;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #5d0599;
+  border-radius: 10px;
+  color: #f3efe6;
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-    .cabecalho {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    header {
-        height: auto;
-        padding: 20px 0;
-    }
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .navigation ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+  header {
+    height: auto;
+    padding: 20px 0;
+  }
 
-    .buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .navigation ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .outros {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .outros ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .info-field {
-        margin-top: 40px;
-        text-align: center;
-    }
+  .outros {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
-    .beneficios h1 {
-        font-size: 32px;
-    }
+  .outros ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-field {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .beneficios h1 {
+    font-size: 32px;
+  }
 }
