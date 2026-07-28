@@ -86,9 +86,11 @@ header nav {
 .buttons button {
   all: unset;
   padding: 2vh 3vh;
-  background-color: #e5e6e7;
   border-radius: 30px;
   cursor: pointer;
+  border: 1px solid #8d0de3;
+  background-color: white;
+  color: #820ad1;
 }
 
 .buttons button:last-of-type {
@@ -199,7 +201,7 @@ body > .container {
   flex-direction: column;
   height: auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 29px;
   justify-content: center;
   padding: 30px 20px;
@@ -300,17 +302,23 @@ input[type="number"] {
 .benCards img {
   width: 20%;
   margin-bottom: 5px;
+  padding-bottom: 5px;
+  margin: 0 auto;
 }
 .benCards {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 300px;
+  height: 350px;
   padding: 10px;
+  padding-top: 15px;
   font-size: 20px;
   background-color: #5d0599;
   border-radius: 10px;
   color: #f3efe6;
+  text-align: center;
+  font-family: "Google Sans Flex", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* Media Queries para Responsividade */
