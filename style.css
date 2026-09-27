@@ -166,15 +166,16 @@ body > .container {
 }
 
 .info-field {
-  margin-top: 50px;
+  row-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-field span {
-  font-size: 38px;
+  font-size: 3.5rem;
   color: black;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 /* paragrafo da conta */
@@ -188,10 +189,7 @@ body > .container {
 /* paragrafo do texto */
 .info-field p {
   font-family: "Outfit", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  margin-top: 12px;
+  font-size: 1.5rem;
 }
 
 .register-field {
@@ -282,10 +280,14 @@ input[type="number"] {
   padding-bottom: 10px;
 }
 
+.features {
+  width: 100%;
+}
+
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  width: 100%;
   margin-bottom: 30px;
   gap: 1.5rem;
 }
@@ -308,8 +310,9 @@ input[type="number"] {
 .benCards {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 350px;
+  width: auto;
+  min-height: 350px;
+  grid-column: span 2;
   padding: 10px;
   padding-top: 15px;
   font-size: 20px;
@@ -321,8 +324,77 @@ input[type="number"] {
   font-family: "Outfit", sans-serif;
 }
 
+.benCards:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.benCards:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.rendimento .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+
+/* .imgRendimento,
+.infoRendimento {
+  flex: 1;
+} */
+.imgRendimento {
+  flex: 0 0 40%;
+}
+
+.infoRendimento {
+  flex: 0 0 60%;
+}
+
+.imgRendimento img {
+  width: 100%;
+  max-width: 25rem;
+  border-radius: 28px;
+}
+
+.infoRendimento {
+  font-family: "Outfit", sans-serif;
+  /* display: flex;
+  flex-direction: column;
+  column-gap: 1.5rem; */
+}
+.infoRendimento hr {
+  font-size: 2.5rem;
+}
+.infoRendimento h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+.infoRendimento p {
+  margin-bottom: 1.5rem;
+}
+.infoRendimento button {
+  all: unset;
+  padding: 2vh 3vh;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #8d0de3;
+  color: white;
+}
+
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .benCards,
+  .benCards:nth-child(4),
+  .benCards:nth-child(5) {
+    grid-column: auto;
+  }
+
   .cabecalho {
     flex-direction: column;
     align-items: center;
