@@ -385,6 +385,19 @@ input[type="number"] {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
+  .login-field {
+    display: flex;
+    align-items: center;
+  }
+
+  .info-field .p {
+    margin-bottom: 1em;
+  }
+
+  .register-field form label {
+    margin: 0 auto;
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }
@@ -393,6 +406,11 @@ input[type="number"] {
   .benCards:nth-child(4),
   .benCards:nth-child(5) {
     grid-column: auto;
+  }
+
+  .beneficios .container .features {
+    width: 85%;
+    margin: 0 auto;
   }
 
   .cabecalho {
@@ -429,11 +447,25 @@ input[type="number"] {
   }
 
   .info-field {
-    margin-top: 40px;
     text-align: center;
+    margin-bottom: 3em;
   }
 
   .beneficios h1 {
     font-size: 32px;
+  }
+
+  .rendimento .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .infoRendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .imgRendimento {
+    margin-bottom: 1em;
   }
 }
